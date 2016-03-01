@@ -26,7 +26,7 @@ namespace ParallaxTable
 			public DataSource (ParallaxHeaderView parallaxHeader)
 			{
 				this.parallaxHeader = parallaxHeader;
-				data = new List<string>(){"Brandon", "Winnipeg"};
+				data = new List<string>(){"Brandon", "Winnipeg", "Morden", "Winkler", "Dauphin", "Portage", "Virden", "Souris", "Glenboro", "Minnedosa", "Neepawa", "Shoal Lake", "Reston", "Pipestone", "Melita", "Hartney"};
 			}
 
 			public override nint RowsInSection (UITableView tableView, nint section)
@@ -51,7 +51,7 @@ namespace ParallaxTable
 					// scrolling down 
 					parallaxHeader.ClipsToBounds = true;
 					bottomConstraint.Constant = -scrollView.ContentOffset.Y / 2; 
-					topContraint.Constant = scrollView.ContentOffset.Y / 2; 
+					topContraint.Constant = scrollView.ContentOffset.Y / 2  ; 
 				} 
 				else { 
 					// scrolling up 
