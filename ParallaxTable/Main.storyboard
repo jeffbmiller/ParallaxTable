@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="132">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="131">
+            <objects>
+                <tableViewController id="132" sceneMemberID="viewController" customClass="ParallaxTableViewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="133">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="132" id="134"/>
+                            <outlet property="delegate" destination="132" id="135"/>
+                        </connections>
+                        <view contentMode="scaleToFill" id="190" key="tableHeaderView" customClass="ParallaxHeaderView">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="122"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="191" translatesAutoresizingMaskIntoConstraints="NO" image="mountains.jpg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="122"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint id="194" firstItem="190" firstAttribute="trailing" secondItem="191" secondAttribute="trailing"/>
+                                <constraint id="195" firstItem="190" firstAttribute="bottom" secondItem="191" secondAttribute="bottom"/>
+                                <constraint id="199" firstItem="191" firstAttribute="top" secondItem="190" secondAttribute="top"/>
+                                <constraint id="200" firstItem="191" firstAttribute="leading" secondItem="190" secondAttribute="leading"/>
+                            </constraints>
+                        </view>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="232" rowHeight="44" customClass="CustomTableViewCell" style="IBUITableViewCellStyleDefault" textLabel="288" reuseIdentifier="customCell">
+                                <rect key="frame" x="0.0" y="144" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="232" id="233">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="288">
+                                            <rect key="frame" x="20" y="0.0" width="560" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections/>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <connections>
+                        <outlet property="parallaxHeader" destination="190" id="name-outlet-190"/>
+                        <outlet property="myImage" destination="191" id="name-outlet-191"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="138" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-245" y="41"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mountains.jpg" width="1920" height="1200"/>
+    </resources>
+</document>

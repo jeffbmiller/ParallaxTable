@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ParallaxTable", "ParallaxTable\ParallaxTable.csproj", "{7364C729-638C-4735-ABB0-19F82BB09C87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Debug|iPhone.Build.0 = Debug|iPhone
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Release|iPhone.ActiveCfg = Release|iPhone
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Release|iPhone.Build.0 = Release|iPhone
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{7364C729-638C-4735-ABB0-19F82BB09C87}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
