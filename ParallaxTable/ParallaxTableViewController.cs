@@ -51,7 +51,7 @@ namespace ParallaxTable
 					// scrolling down 
 					parallaxHeader.ClipsToBounds = true;
 					bottomConstraint.Constant = -scrollView.ContentOffset.Y / 2; 
-					topContraint.Constant = scrollView.ContentOffset.Y / 2  ; 
+					topContraint.Constant = scrollView.ContentOffset.Y / 2 ; 
 				} 
 				else { 
 					// scrolling up 
